@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Košík</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/kosik.css" />  
+  </head>
+  <body>
+   
+    <div class="menu">
+      <a href="index.html" class="logo"
+        ><i class="fas fa-biking"> </i> SPORT BIKE</a
+      >
+      <div class="menu-right">
+        <a href="tovar.html">Produkty</a>
+        <a href > <span class="tooltip">O nás <span class="tooltiptext">Naša spoločnosť SportBike, vznikla v roku 2022 za účelom predaja a distribúcie bicyklov. Spolupracujeme s významnými Európskými distribútormi, čo nám pomáha vždy ponúkať najlepšie ceny a zabezpečiť bohatý sortiment bicyklov. Našim cieľom je spokojnosť zákazníka, ktorú dosahujeme skvelým poradenstvom, nízkymi cenami a rýchlou dodávkou priamo až k Vám domov. </span></a> 
+        <a class="navysCislo" href="kosik.html"   ><i class="fas fa-shopping-basket "><sup class="cisloKosika" id="pocetPoloziekKosikIkona">0</sup></i></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="strana">
+        <img
+          class="logoKosik"
+          style="width: 100%"
+          src="Obrazky/Logo/ctm.jpg"
+          alt=""
+        />
+        <img
+          class="logoKosik"
+          style="width: 100%"
+          src="Obrazky/Logo/kellys.jpg"
+          alt=""
+        />
+        <img
+          class="logoKosik"
+          style="width: 100%"
+          src="Obrazky/Logo/scott.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="main">
+        <div class="nadpisNakuKosik">
+          <h1 style="padding-top: 45px">Nákupný košík</h1>
+        </div>
+        <!-- <div class="cenaSpolu"></div> -->
+        <div class="hlavickaKosika">
+          <div class="hlavickaNazov">Názov</div>
+          <div class="hlavickaCena">Cena</div>
+          <div class="hlavickaKus">Kus</div>
+        </div>
+
+        <div id="basket" class="basket scroll"></div>
+        <div class="cenaSpolu"></div>
+        <div class="nadpisNakuKosik">
+          <h1>Platobné podmienky</h1>
+        </div>
+        <input type="radio" id="hotovost" name="platobnePodmienky" onclick="vyberDopravyHotvost()" />
+        <label class="vyberPlatby" for="hotovost">Hotovosť</label> <br />
+
+        <input type="radio" id="dobierka"  name="platobnePodmienky" onclick="vyberDopravyDobierka()" />
+        <label class="vyberPlatby" for="dobierka">Dobierka</label>
+
+        <div class="nadpisNakuKosik">
+          <h1>Prepravné podmienky</h1>
+        </div>
+        <!-- vypisem si tu  document.querySelector(".doprava") -->
+        <div class="doprava"></div>
+        <div class="nadpisNakuKosik">
+          <h1>Kontaktné údaje</h1>
+        </div>
+        <form id="fomrular" >
+        <div class="ramTabluka">
+          <h2 style="text-align: center ; color: white;">Kontaktné údaje</h2>
+          <div class="rozlozenieInput">
+            <input class="sizeInput" type="text" id="meno" name="krstnemeno" placeholder="Meno" required>
+            <input class="sizeInput" type="text" id="priezvisko" name="priezvisko" placeholder="Priezvisko" required>
+          </div>
+          <div class="rozlozenieInput">
+            <input class="sizeInput" type="text" id="mesto" name="mesto" placeholder="Mesto" required>
+            <input class="sizeInput" type="text" id="ulica" name="ulica" placeholder="Ulica" required>
+            <input class="sizeInput" type="text" id="psc" name="psc" placeholder="PSČ" required>
+          </div>
+          <div class="rozlozenieInput">
+            <input class="sizeInput" type="email" id="email" name="email" placeholder="E-mail" required>
+            <input class="sizeInput" type="number" id="ulica" name="ulica" placeholder="Mobil" required>
+          </div>
+          <div class="Odoslaťpozicia">
+            <input type="submit" value="Odoslať objednávku" class="tlacidloOdoslat"   >
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+    </div>
+
+    <div class="zaver">
+      <div class="ramikKoniec">
+        <h3 class="nadpisKoniec">Pomoc a podpora</h3>
+        <ul>
+          <li>Často kladené otázky</li>
+          <li>Ochrana osobných údajov</li>
+          <li>Cenové ponuky</li>
+          <li>Obchodné podmienky</li>
+        </ul>
+      </div>
+      <div class="ramikKoniec">
+        <h3 class="nadpisKoniec">Služby Zákaznikom</h3>
+        <ul>
+          <li>Reklamácia tovar</li>
+          <li>Vrátenie tovaru a peňazí</li>
+          <li>Platba</li>
+          <li>Doručenie</li>
+        </ul>
+      </div>
+      <div class="ramikKoniec">
+        <h3 class="nadpisKoniec">Spoločnosť</h3>
+        <ul>
+          <li>Spolupráca s nami</li>
+          <li>História</li>
+          <li>Základné informácie</li>
+        </ul>
+      </div>
+      <div class="ramikKoniec">
+        <h3 class="nadpisKoniec">Kontakt</h3>
+        <ul>
+          <li>SportBike Marcel Javor</li>
+          <li>029 62 Oravské Veselé</li>
+          <li>Oravské Veselé 587</li>
+          <li>Tel. 0999 999 999</li>
+          <li>sportbike@sport.sk</li>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
+  </div>
+
+  
+    <script src="JS/common.js"></script>
+    <script src="JS/kosik.js"></script>
+    
+  </body>
+</html>

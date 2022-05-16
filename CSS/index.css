@@ -1,0 +1,184 @@
+/* NAVBAR */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.menu {
+  background: linear-gradient(90deg, #38383a, #908e9e);
+  padding: 5px 10px;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+
+.menu a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 35px;
+  border-radius: 4px;
+}
+
+.menu a.logo {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  padding-left: 100px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu-right {
+  float: right;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .menu a {
+    float: none;
+    display: block;
+    text-align: left;
+    border: 1px solid black;
+  }
+
+  .menu-right {
+    float: none;
+  }
+  .menu a.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding-left: 0px;
+  }
+  .menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .filmMenu {
+    margin: auto;
+    width: 100%;
+    background-image: url(/Obrazky/pozadie/pozadie.jpg);
+  }
+  .size {
+    width: 1100px;
+    height: 450px;
+    padding: auto;
+  }
+
+  .obrazok {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* FILM */
+.filmMenu {
+  margin: auto;
+  width: 100%;
+  background-image: url(/Obrazky/pozadie/pozadie.jpg);
+}
+.size {
+  width: 1100px;
+  height: 450px;
+  padding: auto;
+}
+
+.obrazok {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* clanok a zaver  */
+.rmaik {
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+  margin-left: 100px;
+  text-align: center;
+  background-color: gray;
+}
+.ramikClanok {
+  display: flex;
+  justify-content: center;
+}
+.nadpisClanok {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+.textClanok {
+  font-size: 20px;
+}
+.hlavneClanky {
+  width: 100%;
+  height: 700px;
+  background-image: url(/Obrazky/pozadie/pozadie.jpg);
+}
+
+.zaver {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(90deg, #38383a, #908e9e);
+  display: flex;
+  justify-content: center;
+}
+.ramikKoniec {
+  width: 250px;
+  height: 250px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.nadpisKoniec {
+  color: white;
+}
+.velkostObrazka {
+  width: 100%;
+}
+/* ToolTip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  height: 300px;
+  background: linear-gradient(90deg, #38383a, #908e9e );
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  
+/* Pozicia ToolTip */
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+
+  margin-left: -510px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

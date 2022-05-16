@@ -1,0 +1,66 @@
+.detailObrazok{
+    border: 2px solid black;
+    width: 700px;
+   height: 500px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.velkostObrazok{
+width: 100%;
+height: auto;
+
+}
+.detailPopis{ 
+    border: 2px solid black;
+    width: 1200px;
+   height: 250px;
+    margin: auto;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #8f8f94, #d6d4e6 );
+    padding: 15px;
+}
+.detailPanel { 
+
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(90deg, #38383a, #908e9e );
+  
+}
+.detailTlacidla{
+width: 33.33%;
+text-align: center;
+border: 1px solid white;
+
+color: white;
+}
+.detailCena{ 
+    font-size: 35px;
+    color: rgb(218, 62, 62);
+    font-weight: bold;
+    padding-top: 5px;
+}
+.detailNazov{ 
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.detailKupit{ 
+    font-size: 35px;
+    color: white ;
+    font-weight: bold;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.detailKupit:hover { 
+    background-color: white;
+color: black
+}
+.cisloKosika{
+    color: brown;
+   }

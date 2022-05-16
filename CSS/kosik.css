@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+
+}
+
+.strana {
+  flex: 20%;
+
+  background-image: url(/Obrazky/pozadie/pozadiekosik.jpg);
+  padding: 20px;
+}
+.main {
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+  background-image: url(/Obrazky/pozadie/pozadienakupnazona.jpg);
+  background-size: contain;
+}
+.logoKosik {
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+.odsadenie {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hlavickaKosik {
+  display: flex;
+  justify-content: left;
+}
+
+.ramikKosik {
+  border-bottom: 1px solid black;
+  width: 1100px;
+  height: 160px;
+  margin: auto;
+  margin-top: 5px;
+}
+.velkostObrazkaKosik {
+  width: 150px;
+  cursor: pointer;
+}
+.polozkyRozlozenie {
+  width: 300px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.tlacidlo {
+  background-color: #38383a;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px;
+}
+.tlacidlo:hover{
+  background-color: rgb(241, 234, 234) ;
+color: black;
+}
+.righttlacidlo {
+  display: flex;
+  justify-content: right;
+}
+.nadpisNakuKosik {
+  border-bottom: 2px solid black;
+}
+.totalpolozky {
+  font-weight: bold;
+  font-size: 25px;
+}
+.totalpolozkyDPH {
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(207, 64, 64);
+}
+.totalpolozkyramik {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  padding: 15px;
+  background: linear-gradient(90deg, #38383a, #908e9e);
+  color: white;
+}
+.hlavickaKosika {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  width: 1200px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.popisKosik {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.nazovKosik {
+  width: 300px;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+.nazovKosik:hover{
+background-color: black; 
+color: white
+}
+
+
+.cenaKosik {
+  width: 300px;
+  text-align: center;
+  margin-left: 50px;
+  color: brown;
+}
+.kusKosik {
+  width: 80px;
+  text-align: center;
+}
+.hlavickaCena {
+  margin-right: -180px;
+}
+.hlavickaNazov {
+  margin-left: 40px;
+}
+.hlavickaKus {
+  margin-right: 315px;
+}
+.scroll {
+  overflow: scroll;
+  border: 1px solid black;
+  margin: auto;
+  width: 1200px;
+  height: 800px;
+}
+.vyberPlatby { 
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* FORMULAR */
+.ramTabluka{ 
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 15px;
+  width: 50%;
+  background: linear-gradient(90deg, #38383a, #908e9e);
+ 
+}
+.sizeInput { 
+ width: 180px;
+ height: 50px;
+ margin: 10px;
+ text-align: center;
+
+}
+.sizeLabel{ 
+  margin: 10px;
+
+
+}
+.rozlozenieInput{
+  display: flex;
+  justify-content: left
+
+}
+.velkostInput{
+width: 50%;
+
+}
+.Odoslaťpozicia  { 
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+
+}
+.tlacidloOdoslat{
+  width: 200px;
+  height: 35px;
+}
+.cisloKosika{
+  color: brown;
+ }
